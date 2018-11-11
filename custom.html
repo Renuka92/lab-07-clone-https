@@ -1,9 +1,6 @@
 <html>
 <body>
 <script>
-var window = prompt("Do you want windows on your house?");
-var door = prompt("Do you want a door on your house?");
-var chimney = prompt("Do you want a chimney on your house?");
 
 var houseWindows=("    /"+"\\" + "\n" + "   /"+"  \\" + "\n" +  "  /"+"    \\" + "\n" + " / "+"     \\" + "\n" + "/   "+"     \\" + "\n" + "|        |" + "\n" + "|  0  0  |" + "\n" + "|        |" + "\n" + "|        |" + "\n" + "|        |" + "\n" + "|        |");
 var houseWindowsDoor=("    /"+"\\" + "\n" + "   /"+"  \\" + "\n" +  "  /"+"    \\" + "\n" + " / "+"     \\" + "\n" + "/   "+"     \\" + "\n" + "|        |" + "\n" + "|  0  0  |" + "\n" + "|        |" + "\n" + "|    _   |" + "\n" + "|   | |  |" + "\n" + "|   | |  |");
@@ -12,6 +9,10 @@ var houseWindowsChimney=("       || "+"\n"+"    /\\" + " || " + "\n" + "   /"+" 
 var houseDoor=("    /"+"\\" + "\n" + "   /"+"  \\" + "\n" +  "  /"+"    \\" + "\n" + " / "+"     \\" + "\n" + "/   "+"     \\" + "\n" + "|        |" + "\n" + "|        |" + "\n" + "|        |" + "\n" + "|    _   |" + "\n" + "|   | |  |" + "\n" + "|   | |  |");
 var houseDoorChimney=("       || "+"\n"+"    /\\" + " || " + "\n" + "   /"+"  \\" + "||" + "\n" +  "  /"+"    ||" + "\n" + " / "+"     \\" + "\n" + "/   "+"     \\" + "\n" + "|        |" + "\n" + "|        |" + "\n" + "|        |" + "\n" + "|        |" + "\n" + "|    _   |" + "\n" + "|   | |  |");
 var houseChimney=("       || "+"\n"+"    /\\" + " || " + "\n" + "   /"+"  \\" + "||" + "\n" +  "  /"+"    ||" + "\n" + " / "+"     \\" + "\n" + "/   "+"     \\" + "\n" + "|        |" + "\n" + "|        |" + "\n" + "|        |" + "\n" + "|        |" + "\n" + "|        |" + "\n" + "|        |");
+
+var window = prompt("Do you want windows on your house?");
+var door = prompt("Do you want a door on your house?");
+var chimney = prompt("Do you want a chimney on your house?");
 
 if (window=="yes"){
 	if (door=="yes"){
