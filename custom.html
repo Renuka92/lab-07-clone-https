@@ -10,38 +10,33 @@ var houseDoor=("    /"+"\\" + "\n" + "   /"+"  \\" + "\n" +  "  /"+"    \\" + "\
 var houseDoorChimney=("       || "+"\n"+"    /\\" + " || " + "\n" + "   /"+"  \\" + "||" + "\n" +  "  /"+"    ||" + "\n" + " / "+"     \\" + "\n" + "/   "+"     \\" + "\n" + "|        |" + "\n" + "|        |" + "\n" + "|        |" + "\n" + "|        |" + "\n" + "|    _   |" + "\n" + "|   | |  |");
 var houseChimney=("       || "+"\n"+"    /\\" + " || " + "\n" + "   /"+"  \\" + "||" + "\n" +  "  /"+"    ||" + "\n" + " / "+"     \\" + "\n" + "/   "+"     \\" + "\n" + "|        |" + "\n" + "|        |" + "\n" + "|        |" + "\n" + "|        |" + "\n" + "|        |" + "\n" + "|        |");
 
-var window = prompt("Do you want windows on your house?");
+var windows = prompt("Do you want windows on your house?");
 var door = prompt("Do you want a door on your house?");
 var chimney = prompt("Do you want a chimney on your house?");
 
-if (window=="yes") {
-	if (door=="yes") {
-		if (chimney=="yes") {
-			console.log(houseWindowsDoorChimney)
-		}
-		else {
-			console.log(houseWindowsDoor)
-		}
-	}
-	else {
-		if (chimney=="yes") {
-			console.log(houseWindowsChimney)
-		}
-		else {
-			console.log(houseWindows)
-		}
-	}
+if (windows=="yes" && door=="yes" && chimney=="yes") {
+	console.log(houseWindowsDoorChimney)
 }
-else if (door=="yes") {
-	if (chimney=="yes") {
-		console.log(houseDoorChimney)
-	}
-	else {
-		console.log(houseDoor)
-	}
+else if (windows=="yes" && door=="yes" && chimney=="no") {
+	console.log(houseWindowsDoor)
+}
+else if (windows=="yes" && door=="no" && chimney=="yes") {
+	console.log(houseWindowsChimney)
+}
+else if (windows=="yes" && door=="no" && chimney=="no") {
+	console.log(houseWindows)
+}
+else if (windows=="no" && door=="yes" && chimney=="no") {
+	console.log(houseDoor)
+}
+else if (windows=="no" && door=="yes" && chimney=="yes") {
+	console.log(houseDoorChimney)
+}
+else if (windows=="no" && door=="no" && chimney=="yes") {
+	console.log(houseChimney)
 }
 else {
-	console.log(houseChimney)
+	console.log("House unavailable")
 }
 </script>
 </body>
